@@ -45,16 +45,16 @@ const NavLg = () => {
           <Link to="/" onClick={() => handleClick('home')}>MySite</Link>
         </div>
         <ul className="flex space-x-4 text-lg font-lato"> 
-          <li>
+          <li className='py-4'>
             <Link
               to="/"
-              className={`text-white py-4 ${activeLink === 'home' ? 'underline underline-offset-4 decoration-2 decoration-[#E49F27]' : ''}`}
+              className={`text-white  ${activeLink === 'home' ? 'underline underline-offset-4 decoration-2 decoration-[#E49F27]' : ''}`}
               onClick={() => handleClick('home')}
             >
               Home
             </Link>
           </li>
-          <li>
+          <li className='py-4'>
             <Link
               to="/about-Us"
               className={`text-white ${activeLink === 'about-Us' ? 'underline underline-offset-4 decoration-2 decoration-[#E49F27]' : ''}`}
@@ -142,7 +142,7 @@ const NavLg = () => {
               </li>
             </ul>
           </li>
-          <li>
+          <li className='py-4'>
             <Link
               to="/contact-us"
               className={`text-white ${activeLink === 'contact-us' ? 'underline underline-offset-4 decoration-2 decoration-[#E49F27]' : ''}`}

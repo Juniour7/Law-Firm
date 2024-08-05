@@ -87,7 +87,7 @@ const Home = () => {
             </div>
           </div>
           <div className='basis-[30%] h-[500px] relative'>
-            <img src={Image1} alt='' className='w-full h-full object-cover z-50 relative shadow-md' />
+            <img src={Image1} alt='' className='w-full h-full object-cover z-40 relative shadow-md' />
             <div className='absolute -bottom-[5%] -right-6 bg-[#1B3452] w-full h-[500px]'/>
           </div>
         </section>
