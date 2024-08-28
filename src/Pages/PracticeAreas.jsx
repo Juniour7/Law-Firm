@@ -28,13 +28,13 @@ const PracticeData = [
         content: "Anti-Bribery & Anti-Corruption In today’s global business environment, where integrity and compliance are more critical than ever, our specialized team."
     },
     {
-        url: "/",
+        url: "probate-administration",
         icon: <CiBank />,
         title: "Probate & Administration",
         content: "Anti-Bribery & Anti-Corruption In today’s global business environment, where integrity and compliance are more critical than ever, our specialized team."
     },
     {
-        url: "/",
+        url: "employment-relations",
         icon: <GoPeople />,
         title: "Employment Relations & Labour Law",
         content: "Anti-Bribery & Anti-Corruption In today’s global business environment, where integrity and compliance are more critical than ever, our specialized team."
@@ -46,7 +46,7 @@ const PracticeData = [
         content: "Anti-Bribery & Anti-Corruption In today’s global business environment, where integrity and compliance are more critical than ever, our specialized team."
     },
     {
-        url: "/",
+        url: "cooprate",
         icon: <CiBank />,
         title: "Corporate, Mergers & Acquisitions",
         content: "Anti-Bribery & Anti-Corruption In today’s global business environment, where integrity and compliance are more critical than ever, our specialized team."
@@ -82,7 +82,7 @@ const PracticeAreas = () => {
                 </div>
             </section>
             <section className='my-[50px]'>
-                <div className='w-[80%] mx-auto grid grid-cols-2 lg:grid-cols-3 gap-3 pb-[70px]'>
+                <div className='w-[80%] mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-3 pb-[70px]'>
                     {PracticeData.map((Data,Index) => (
                         <div key={Index} className='bg-white shadow-md px-3 py-5 flex flex-col justify-center items-center text-center font-laro group hover:bg-[#1B3452] transition-all duration-500'>
                             <Link to={Data.url}>

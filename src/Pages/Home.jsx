@@ -22,31 +22,32 @@ import { Link } from 'react-router-dom';
 //Practice Areas Data
 const PracticeData = [
   {
-    url: "",
+    src: Image1,
+    url: "/practice-areas/real-estate",
     icon: <LuScale />,
     title: "Real Estate",
     content: "We work in a variety of industries and our specialist industry knowledge coupled with our intellectual property expertise ensures that we are able to provide cost effective advice that is innovative and adds value. At CR Advocates LLP,"
   },
   {
-    url: "",
+    url: "/practice-areas/banking-financing",
     icon: <CiBank />,
     title: "Banking & Financing",
     content: "We work in a variety of industries and our specialist industry knowledge coupled with our intellectual property expertise ensures that we are able to provide cost effective advice that is innovative and adds value. At CR Advocates LLP,"
   },
   {
-    url: "",
+    url: "/practice-areas/employment-relations",
     icon: <GoPeople />,
     title: "Employment Relations",
     content: "We work in a variety of industries and our specialist industry knowledge coupled with our intellectual property expertise ensures that we are able to provide cost effective advice that is innovative and adds value. At CR Advocates LLP,"
   },
   {
-    url: "debt-recovery",
+    url: "/practice-areas/debt-recovery",
     icon: <FaRegHandshake />,
     title: "Debt Recovery",
     content: "We work in a variety of industries and our specialist industry knowledge coupled with our intellectual property expertise ensures that we are able to provide cost effective advice that is innovative and adds value. At CR Advocates LLP,"
   },
   {
-    url: "",
+    url: "/practice-areas/risk-compliance",
     icon: <GiHandcuffs />,
     title: "Risk Compliance",
     content: "We work in a variety of industries and our specialist industry knowledge coupled with our intellectual property expertise ensures that we are able to provide cost effective advice that is innovative and adds value. At CR Advocates LLP,"
@@ -98,9 +99,9 @@ const Home = () => {
             <h3 className='text-base text-[#E49F27] font-playfair'>What We Do</h3>
             <h1 className='text-white text-4xl font-semibold font-playfair'>Our Practice Areas</h1>
           </div>
-          <div className='grid grid-cols-3 justify-center gap-3 w-[90%] mx-auto mt-[20px] mb-[50px]'>
+          <div className='grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-4 w-[90%] mx-auto mt-[20px] mb-[50px]'>
             {PracticeData.map((Data, index) => (
-              <div key={index} className='bg-Main-700 p-3 flex gap-3 text-white'>
+              <div key={index} className='bg-Main-700 p-3 flex gap-3 text-white group hover:bg-Main-900 transition-all duration-300 relative'>
                 <Link to={Data.url}>
                   <div className='text-5xl font-light text-[#E49F27]'>
                     {Data.icon}
@@ -109,6 +110,10 @@ const Home = () => {
                     <h2 className=' text-2xl font-playfair'>{Data.title}</h2>
                     <p className='text-sm my-[20px] text-gray-300'>{Data.content}</p>
                   </div>
+                  {/* <div className='hidden group-hover:block absolute top-0 h-full w-full'>
+                    <img src={Data.src} alt='' className='w-full h-full object-cover' />
+                    <h1 className='text-red-900 '>hello</h1>
+                  </div> */}
                 </Link>
               </div>
             ))}

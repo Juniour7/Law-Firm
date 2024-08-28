@@ -39,7 +39,7 @@ const NavLg = () => {
 
   return (
     <>
-      <nav className={`fixed w-full z-50 top-0 h-[90px] ${scrolling ? 'bg-gray-800' : 'bg-[#1B3452]'} transition-colors duration-300 ease-in-out`}>
+      <nav className={`fixed w-full z-50 top-0 h-[90px] border-b-[0.5px] border-gray-500 ${scrolling ? 'bg-[#1B3452] bg-opacity-55' : ' bg-transparent'} transition-colors duration-300 ease-in-out`}>
       <div className="container mx-auto flex justify-between items-center p-4">
         <div className="text-white text-2xl font-bold">
           <Link to="/" onClick={() => handleClick('home')}>MySite</Link>
@@ -71,8 +71,8 @@ const NavLg = () => {
               <li>
                 <Link
                   to="/practice-areas/banking-financing"
-                  className={`block px-4 py-2 hover:bg-gray-600 ${activeLink === '/banking-financing' ? '' : ''}`}
-                  onClick={() => handleClick('service1')}
+                  className={`block px-4 py-2 hover:bg-gray-600 ${activeLink === '/practice-areas/banking-financing' ? 'bg-red-900' : ''}`}
+                  onClick={() => handleClick('practice-areas/banking-financing')}
                 >
                   Banking & Financing
                 </Link>
@@ -153,8 +153,7 @@ const NavLg = () => {
           </li>
         </ul>
         <div className='flex gap-4'>
-          <button onClick={handleLogInClick} className='text-white font-semibold px-5 py-2 border border-[#E49F27] hover:bg-[#E49F27] transition-colors duration-500'>Log In</button>
-          <button onClick={handleSignUpClick} className='text-white font-semibold px-5 py-1 border border-[#E49F27] bg-[#E49F27] transition-colors duration-500'>Sign Up</button>
+          <button onClick={handleLogInClick} className='text-white font-semibold px-5 py-2 border border-[#E49F27] hover:bg-[#E49F27] transition-colors duration-300'>Client Login</button>
         </div>
       </div>
     </nav>

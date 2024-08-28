@@ -1,5 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+
 
 //icons
 import { IoChevronForwardOutline } from "react-icons/io5";
@@ -9,9 +11,17 @@ import { IoChevronForwardOutline } from "react-icons/io5";
 import sculpture from "../assets/sculpture.jpg";
 
 
+
 const Login = () => {
+    const navigate = useNavigate();
+    const handleSubmit = () => {
+        navigate('/dashboard');
+    }
   return (
     <>
+        <Helmet>
+            <title>Account LogIn - Guardian LawFirm</title>
+        </Helmet>
         <section className='h-screen bg-[#F9F7F8] py-[70px]'>
             <div className='w-[80%] mx-auto bg-white shadow-md flex justify-center'>
                 <div className='basis-[45%] h-[85vh] relative'>
@@ -40,10 +50,10 @@ const Login = () => {
                         <h2 className='font-medium text-3xl'>Log In</h2>
                         <p className='text-sm text-[#716363]'>Welcome back. Please login to your account.</p>
                         <div className='my-[30px]'>
-                            <form className='text-[#716363] w-[90%] flex flex-col justify-center '>
+                            <form onSubmit={handleSubmit} className='text-[#716363] w-[90%] flex flex-col justify-center '>
                                 <div>
                                     <label>Username</label>
-                                    <input type='text' placeholder='username@gmail.com' className='block border border-[#1B3452] px-3 py-2 rounded-md w-full my-[15px]' required />
+                                    <input type='email' placeholder='username@gmail.com' className='block border border-[#1B3452] px-3 py-2 rounded-md w-full my-[15px]' required />
                                 </div>
                                 <div>
                                     <label>password</label>
@@ -52,6 +62,7 @@ const Login = () => {
                                 <div className='text-center text-[#716363] text-sm my-[15px]'>
                                     <p className='cursor-pointer hover:text-[#E49F27]'>Forgot password ?</p>
                                 </div>
+                                <h4 className='text-center mb-[20px]'>Don't have an account ? <Link to='/signup' className='text-[#E49F27]'>Sign Up</Link></h4>
                                 <button type='submit' className='bg-[#1B3452] text-white font-semibold text-xl w-[60%] mx-auto py-2 rounded-md hover:bg-black transition-colors duration-300'>Log In</button>
                             </form>
                         </div>
