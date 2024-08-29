@@ -134,7 +134,7 @@ const Home = () => {
         {/* Proffesional Team */}
         <section className=''>
           <h1 className='text-center text-4xl text-[#1B3452] font-semibold font-playfair'>OUR PROFFESIONAL TEAM</h1>
-          <div className='w-[90%] mx-auto my-[25px] text-white flex justify-center items-center gap-2'>
+          <div className='w-[90%] mx-auto my-[25px] text-white md:flex justify-center items-center gap-2'>
             <div className='h-[550px] basis-[30%] relative'>
               <img src="https://i.pinimg.com/736x/6e/44/f1/6e44f186947b3e3eba6d5517a18079ac.jpg" alt="" className='w-full h-full object-cover' />
               <div className='absolute bottom-[6%] left-[6%] font-laro'>
@@ -191,14 +191,14 @@ const Home = () => {
 
         {/* Mailing List */}
         <section className='py-[20px] w-full mt-[70px]'>
-          <div className='w-[70%] mx-auto bg-[#1B3452] text-white rounded-md font-lato flex flex-col justify-center items-center relative'>
-            <div className='absolute bg-[#E49F27] w-[100px] h-[100px]  -top-[50px] flex justify-center items-center rounded-full'>
-              <span className='text-7xl border-2 border-white rounded-full p-2'>
+          <div className='w-[90%] md:w-[70%] mx-auto bg-[#1B3452] text-white rounded-md font-lato flex flex-col justify-center items-center relative'>
+            <div className='absolute bg-[#E49F27] md:w-[100px] md:h-[100px] -top-[40px]  md:-top-[50px] flex justify-center items-center rounded-full'>
+              <span className='text-5xl md:text-7xl border-2 border-white rounded-full p-2'>
                 <CiMail />
               </span>
             </div>
-            <div className='mt-[70px] text-center'>
-              <h3 className='text-5xl '>NewsLetter</h3>
+            <div className='mt-[30px] md:mt-[70px] text-center'>
+              <h3 className='text-2xl md:text-5xl'>NewsLetter</h3>
               <p className='text-sm font-light my-[10px] text-[#D9D9D9]'>Stay up to date with all our latest news and products.</p>
             </div>
             <div className='my-[20px] w-[90%] mx-auto'>
