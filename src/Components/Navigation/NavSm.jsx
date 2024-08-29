@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 //icons
 import { FaBarsStaggered } from "react-icons/fa6";
@@ -8,7 +8,6 @@ import { IoMdClose } from "react-icons/io";
 
 const MenuItem = ({ label, children }) => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleSubmenu = () => {
     setIsOpen(!isOpen);
   };
@@ -24,7 +23,7 @@ const MenuItem = ({ label, children }) => {
       {children && (
         <ul 
           className={`pl-3 mt-1  space-y-1 transition-all duration-300 overflow-hidden ${
-            isOpen ? 'max-h-[300px]' : 'max-h-0'
+            isOpen ? 'max-h-[500px]' : 'max-h-0'
           }`}
         >
           {children}
@@ -36,11 +35,16 @@ const MenuItem = ({ label, children }) => {
 
 const NavSm = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
   const closemenu = () => {
     setIsOpen(false);
+  };
+
+  const handleLogInClick = () => {
+    navigate('/login')
   }
 
   return (
@@ -73,10 +77,7 @@ const NavSm = () => {
                   </MenuItem>
                   <NavLink to="/contact-us" onClick={closemenu}><MenuItem label="Contact Us" /></NavLink>
                   <div>
-                    <Link to="/booking"><button onClick={closemenu} className="bg-[#00ADEF]  text-white text-lg font-bold px-5 py-2 transition-colors duration-300 rounded-full">Sign Up</button></Link>
-                  </div>
-                  <div>
-                    <Link to="/booking"><button onClick={closemenu} className="bg-[#00ADEF]  text-white text-lg font-bold px-5 py-2 transition-colors duration-300 rounded-full">Log In</button></Link>
+                    <button onClick={handleLogInClick} className='text-[#E49F27] font-semibold px-5 py-2 border border-[#E49F27] hover:bg-c transition-colors duration-300'>Client Login</button>
                   </div>
                 </ul>
               </div>

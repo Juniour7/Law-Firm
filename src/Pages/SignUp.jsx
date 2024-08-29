@@ -23,9 +23,9 @@ const SignUp = () => {
 
   return (
     <>
-      <section className=' bg-[#F9F7F8] py-[70px] flex justify-center items-center'>
-        <div className='w-[80%] m-auto bg-white shadow-md flex flex-row-reverse justify-center'>
-          <div className='basis-[50%] h-[95vh] relative'>
+      <section className='bg-[#F9F7F8] py-[70px] flex justify-center items-center'>
+        <div className='w-[80%] m-auto bg-white shadow-md md:flex flex-row-reverse justify-center'>
+          <div className='basis-[50%] h-[95vh] relative hidden'>
             <img src={sculpture} alt='' className='w-full h-full object-cover' />
             <div className='absolute top-0 w-full h-full bg-[#1B3452] bg-opacity-80 flex flex-col justify-center items-center'>
               <div>
@@ -46,7 +46,7 @@ const SignUp = () => {
               </div>
             </div>
           </div>
-          <div className='basis-[50%] p-5 font-lato'>
+          <div className='basis-[50%] md:p-5 font-lato'>
             <div className='w-[90%] mx-auto p-3'>
               <h2 className='font-medium text-3xl'>Sign Up</h2>
               <p className='text-sm text-[#716363]'>Sign up to create an account.</p>

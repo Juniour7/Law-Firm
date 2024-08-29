@@ -57,9 +57,9 @@ const HeroCarousel = () => {
 
     return (
         <>
-            <div className='w-full h-[400px] lg:h-screen overflow-hidden mt-[70px] md:mt-0'>
+            <div className='w-full h-[250px] lg:h-screen overflow-hidden mt-[70px] md:mt-0'>
                 <Slider {...settings}>
-                    <div className='w-full h-[300px] lg:h-screen relative'>
+                    <div className='w-full h-[250px] lg:h-screen relative'>
                         <img src="https://plus.unsplash.com/premium_photo-1695942301094-472c4dbf9130?q=80&w=1434&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt='Hero' className='w-full h-full object-cover' />
                         <div className='absolute inset-0 flex flex-col justify-center items-center h-full w-full bg-black bg-opacity-50'>
                             <div className='w-[80%] md:w-[60%] mx-auto text-center absolute'>
@@ -68,7 +68,7 @@ const HeroCarousel = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='w-full h-[300px] md:h-screen relative'>
+                    <div className='w-full h-[250px] md:h-screen relative'>
                         <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt='Hero' className='w-full h-full object-cover' />
                         <div className='absolute inset-0 flex flex-col justify-center items-center h-full w-full bg-black bg-opacity-50'>
                             <div className='w-[90%] md:w-[60%] mx-auto text-center absolute'>
@@ -77,7 +77,7 @@ const HeroCarousel = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='w-full h-[300px] md:h-screen relative'>
+                    <div className='w-full h-[250px] md:h-screen relative'>
                         <img src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt='Hero' className='w-full h-full object-cover' />
                         <div className='absolute inset-0 flex flex-col justify-center items-center h-full w-full bg-black bg-opacity-50'>
                             <div className='w-[80%] md:w-[70%] mx-auto text-center absolute'>

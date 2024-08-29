@@ -63,7 +63,7 @@ const BankingFinancing = () => {
         </section>
         <section className='mt-[70px] mb-[50px] md:flex justify-center gap-[20px] w-[90%] mx-auto'>
           <div className='basis-[70%] '>
-            <div className='w-full h-[270px] md:h-[500px]'>
+            <div className='w-full h-[250px] md:h-[500px]'>
               <img src={Image1} alt='Banking And financing' className='w-full h-full object-cover' />
             </div>
             <div className='border-b border-Main-900'>
