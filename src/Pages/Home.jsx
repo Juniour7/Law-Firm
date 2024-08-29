@@ -53,9 +53,15 @@ const PracticeData = [
     content: "We work in a variety of industries and our specialist industry knowledge coupled with our intellectual property expertise ensures that we are able to provide cost effective advice that is innovative and adds value. At CR Advocates LLP,"
   },
   {
-    url: "",
+    url: "/practice-areas/private-client",
     icon: <FaSuperpowers  />,
     title: "Private Client",
+    content: "We work in a variety of industries and our specialist industry knowledge coupled with our intellectual property expertise ensures that we are able to provide cost effective advice that is innovative and adds value. At CR Advocates LLP,"
+  },
+  {
+    url: "/practice-areas/cooprate",
+    icon: <CiBank  />,
+    title: "Corporate, Mergers & Acquisitions",
     content: "We work in a variety of industries and our specialist industry knowledge coupled with our intellectual property expertise ensures that we are able to provide cost effective advice that is innovative and adds value. At CR Advocates LLP,"
   },
 ];

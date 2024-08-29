@@ -1,4 +1,4 @@
-import React from 'react';
+import react from "react";
 import { Link } from 'react-router-dom';
 
 //images
@@ -6,6 +6,7 @@ import Image1 from "../../assets/Slideshow/cebt.jpg";
 
 //icons
 import { GoChevronRight } from "react-icons/go";
+import { GiHighGrass } from 'react-icons/gi';
 
 const PracticeAreas = [
   {
@@ -42,14 +43,14 @@ const DebtRecovery = () => {
   return (
     <>
       <div className=''>
-        <section className='w-full h-[70vh] bg-fixed bg-no-repeat bg-cover relative'
+        <section className='w-full h-[40vh] md:h-[70vh] bg-fixed bg-no-repeat bg-cover relative'
           style={{ backgroundImage: `url(${Image1})`, backgroundSize: 'cover', backgroundPosition: 'bottom' }}
         >
           <div className='absolute top-0 w-full h-full bg-[#1B3452] bg-opacity-40 flex flex-col items-center justify-center font-lato text-white'>
-            <h1 className='text-6xl font-bold subpixel-antialiased'>Debt Recovery</h1>
+            <h1 className='text-3xl md:text-6xl font-bold subpixel-antialiased'>Debt Recovery</h1>
           </div>
           <div className='absolute bottom-0 bg-[#FBFBFB] w-full h-[20%] rounded-tl-full rounded-tr-md'>
-            <h2 className='text-center text-4xl font-semibold my-[20px] text-[#1B3452]'>Legal Practice Areas</h2>
+            <h2 className='text-center text-xl md:text-4xl font-semibold my-[20px] text-[#1B3452]'>Legal Practice Areas</h2>
             <div className='p-4 flex gap-4 text-sm'>
               <Link to='/' className='hover:text-[#E49F27]'>
                 Home >>
@@ -60,9 +61,9 @@ const DebtRecovery = () => {
             </div>
           </div>
         </section>
-        <section className='mt-[70px] mb-[50px] flex justify-center gap-[20px] w-[90%] mx-auto'>
+        <section className='mt-[70px] mb-[50px] md:flex justify-center gap-[20px] w-[90%] mx-auto'>
           <div className='basis-[70%] '>
-            <div className='w-full h-[500px]'>
+            <div className='w-full h-[270px] md:h-[500px]'>
               <img src={Image1} alt='Banking And financing' className='w-full h-full object-cover' />
             </div>
             <div className='border-b border-Main-900'>
@@ -80,7 +81,7 @@ const DebtRecovery = () => {
               {PracticeAreas.map((Data,Index) => (
                 <div key={Index} className='border border-gray-500 text-gray-500 p-4 mt-[20px] font-playfair group hover:bg-[#E49F27] hover:text-white hover:border-none transition-all duration-300 ease-in-out'>
                   <Link to={Data.path}>
-                    <h1 className='text-xl font-semibold'>{Data.title}</h1>
+                    <h1 className='text-lg md:text-xl font-semibold'>{Data.title}</h1>
                   </Link>
                 </div>
               ))}
